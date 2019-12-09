@@ -10,7 +10,7 @@
     "build": "preact build",
     "serve": "preact build && serve build --single",
     "dev": "preact watch",
-    "format": "prettier-standard --format",
+    "format": "prettier-standard '{src,test}/**/*.{js,jsx,ts,tsx}'",
     "test": "jest"
   },
   "devDependencies": {
