@@ -2,7 +2,7 @@
 
 ## CLI Commands
 
-``` bash
+```bash
 # install dependencies
 yarn
 
@@ -15,7 +15,7 @@ yarn build
 # test the production build locally
 yarn serve
 
-# run tests with jest and preact-render-spy 
+# run tests with jest and preact-render-spy
 yarn test
 ```
 
