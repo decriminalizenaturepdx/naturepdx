@@ -24,6 +24,13 @@ const MissionStatement = () => {
           "Decriminalization of Natural Psychedelics" (PDX02) intended for the
           2020 ballot for the city of Portland Oregon
         </div>
+        <div>
+          <ul>
+            <li className="nav-item">
+              <a className="nav-link" href="https://www.portlandoregon.gov/auditor/article/745466">Election Ballot</a>
+            </li>
+          </ul>
+        </div>
         <button type="button" className="btn btn-link" onClick={onReadMoreOrLess}>Read less</button>
       </div>}
   </div>
