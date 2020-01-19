@@ -3,6 +3,7 @@
   "name": "nature-pdx",
   "version": "0.0.0",
   "license": "MIT",
+  "homapge": "./",
   "scripts": {
     "start": "per-env",
     "start:production": "npm run -s serve",
