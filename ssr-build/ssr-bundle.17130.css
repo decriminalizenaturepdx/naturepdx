@@ -7,7 +7,7 @@ body {
   background: #6c757c !important;
   font-family: 'Helvetica Neue', arial, sans-serif;
   font-weight: 400;
-  color: #f5f5f5;
+  color: #f5f5f5 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -90,4 +90,4 @@ body {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.26297.css.map*/
+/*# sourceMappingURL=ssr-bundle.17130.css.map*/
