@@ -82,6 +82,7 @@ const SignUpForm = () => {
         onChange={evt => setFirstNameValue(evt.target.value)}
         type='text'
         value={firstNameValue}
+        variant="filled"
       />
       <TextField
         error={lastNameInvalid}
@@ -90,6 +91,7 @@ const SignUpForm = () => {
         onChange={evt => setLastNameValue(evt.target.value)}
         type='text'
         value={lastNameValue}
+        variant="filled"
       />
       <TextField
         error={emailInvalid}
@@ -98,6 +100,7 @@ const SignUpForm = () => {
         onChange={evt => setEmailValue(evt.target.value)}
         type='text'
         value={emailValue}
+        variant="filled"
       />
       <Button variant="contained" type="submit">
         Submit
