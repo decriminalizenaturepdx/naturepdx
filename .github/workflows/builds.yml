@@ -1,17 +1,31 @@
-name: CI
+name: Build and Deploy
 
-on: [push]
+on:
+  push:
+    branches: 
+      - master
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [8.x, 10.x, 12.x]
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
+    - uses: actions/checkout@v2
+      with:
+        ref: master
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: install dependencies, build, and deploy
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        npm install --global yarn
+        yarn
+        yarn build
+        yarn deploy:github
+      env:
+        CI: true
