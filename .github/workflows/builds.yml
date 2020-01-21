@@ -25,7 +25,11 @@ jobs:
       run: |
         npm install --global yarn
         yarn
-        yarn build
-        yarn deploy:github
+        yar build
       env:
         CI: true
+    - name: GitHub Pages Deploy
+      uses: maxheld83/ghpages@v0.2.1
+      env:
+        BUILD_PATH: build
+         
