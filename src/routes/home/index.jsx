@@ -1,11 +1,13 @@
-import { h } from 'preact'
-import style from './style'
-import SignUpForm from '../../components/sign-up-form'
-import MissionStatement from '../../components/mission-statement'
+import { h } from 'preact';
+import style from './style';
+import SignUpForm from '../../components/sign-up-form';
+import Carousel from '../../components/carousel';
+import MissionStatement from '../../components/mission-statement';
 
 const Home = () => (
   <div class={style.home}>
     <MissionStatement />
+    <Carousel />
     <SignUpForm />
   </div>
 )
