@@ -6,13 +6,13 @@ const Header = () => (
   <header class={style.header}>
     <h1>Let'em Grow</h1>
     <nav>
-      <Link activeClassName={style.active} href='/'>
+      <Link activeClassName={style.active} href='/naturepdx'>
         Home
       </Link>
-      <Link activeClassName={style.active} href='/profile'>
+      <Link activeClassName={style.active} href='/naturepdx/profile'>
         Me
       </Link>
-      <Link activeClassName={style.active} href='/profile/john'>
+      <Link activeClassName={style.active} href='/naturepdx/profile/john'>
         John
       </Link>
     </nav>

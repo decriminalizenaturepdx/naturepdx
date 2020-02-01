@@ -21,9 +21,9 @@ export default class App extends Component {
       <div id='root-elm'>
         <Header />
         <Router onChange={this.handleRoute}>
-          <Home path='/' />
-          <Profile path='/profile/' user='me' />
-          <Profile path='/profile/:user' />
+          <Home path='/naturepdx' />
+          <Profile path='/naturepdx/profile' user='me' />
+          <Profile path='/naturepdx/profile/:user' />
         </Router>
       </div>
     )
