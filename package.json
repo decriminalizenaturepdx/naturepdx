@@ -32,7 +32,8 @@
     "gh-pages": "^2.2.0",
     "preact": "^10.0.1",
     "preact-render-to-string": "^5.1.0",
-    "preact-router": "^3.0.0"
+    "preact-router": "^3.0.0",
+    "react-responsive-carousel": "^3.1.51"
   },
   "jest": {
     "preset": "jest-preset-preact",
