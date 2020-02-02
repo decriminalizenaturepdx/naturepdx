@@ -39,4 +39,5 @@ jobs:
       uses: alex-page/blazing-fast-gh-pages-deploy@master
       with:
         repo-token: ${{ secrets.GH_PAT }}
+        site-directory: "build/"
          
