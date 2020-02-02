@@ -48,15 +48,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./assets/icons/mstile-150x150.png"
   },
   {
-    "revision": "76ed16bb39f9076b557d",
+    "revision": "9a3bfda90ff5f63891d1",
     "url": "./bundle.496ba.css"
   },
   {
-    "revision": "76ed16bb39f9076b557d",
-    "url": "./bundle.76ed1.js"
+    "revision": "9a3bfda90ff5f63891d1",
+    "url": "./bundle.9a3bf.js"
   },
   {
-    "revision": "07c36367369b7f0abc50e055d2f99db4",
+    "revision": "c889cb0beb7bb769152d4cf8366439c6",
     "url": "./index.html"
   },
   {
@@ -84,7 +84,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./sw-debug.js"
   },
   {
-    "revision": "a7c40a27f95001355b8ef7260c4ace6c",
+    "revision": "139be7c03875ecad28e0c401b3a1ef43",
     "url": "./sw-esm.js"
   },
   {
