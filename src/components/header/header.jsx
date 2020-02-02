@@ -5,7 +5,7 @@ import App from '../app'
 
 const Header = ({ path }) => (
   <header class={style.header}>
-    <h1>Let'em Grow... test</h1>
+    <h1>Let'em Grow</h1>
     <nav>
       <Link activeClassName={style.active} href={path}>
         Home
