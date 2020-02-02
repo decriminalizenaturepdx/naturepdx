@@ -28,10 +28,15 @@ jobs:
         yarn build
       env:
         CI: true
-    - name: GitHub Pages Deploy
-      uses: maxheld83/ghpages@v0.2.1
+#    - name: GitHub Pages Deploy
+#      uses: maxheld83/ghpages@v0.2.1
+#      with:
+#        secrets: "GITHUB_TOKEN"
+#      env:
+#        BUILD_DIR: "build/"
+        
+    - name: Deploy site to gh-pages branch
+      uses: alex-page/blazing-fast-gh-pages-deploy@master
       with:
-        secrets: "GITHUB_TOKEN"
-      env:
-        BUILD_DIR: "build/"
+        repo-token: ${{ secrets.GH_PAT }}
          
