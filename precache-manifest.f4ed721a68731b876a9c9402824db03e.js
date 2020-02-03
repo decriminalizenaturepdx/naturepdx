@@ -48,35 +48,47 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./assets/icons/mstile-150x150.png"
   },
   {
-    "revision": "f997c299a2866a8f0fb7",
+    "revision": "34a78511a9c61f079387",
+    "url": "./bundle.34a78.js"
+  },
+  {
+    "revision": "34a78511a9c61f079387",
     "url": "./bundle.496ba.css"
   },
   {
-    "revision": "9385fb7ea62b0b195348312017871a88",
-    "url": "./bundle.94ae1.esm.js"
-  },
-  {
-    "revision": "a5bf473da06f63e53be8a409740a5bf1",
+    "revision": "ddc56380702e911d29ebeffa06ef566f",
     "url": "./index.html"
   },
   {
-    "revision": "3b50323e7293f266b5d553b8deb022f2",
-    "url": "./polyfills.5e8e9.esm.js"
+    "revision": "7127dfa32f5d5a9dccf1",
+    "url": "./polyfills.7127d.js"
   },
   {
-    "revision": "717211c3d25f1360571b637495c848ea",
-    "url": "./route-home.chunk.1be2c.esm.js"
+    "revision": "5b3e1a0e05edc64f05e0",
+    "url": "./route-home.chunk.5b3e1.js"
   },
   {
-    "revision": "fc54aac102685875aa33",
+    "revision": "5b3e1a0e05edc64f05e0",
     "url": "./route-home.chunk.88129.css"
+  },
+  {
+    "revision": "26a8fa928b5d84b86da6",
+    "url": "./route-profile/index.jsx.chunk.26a8f.js"
   },
   {
     "revision": "26a8fa928b5d84b86da6",
     "url": "./route-profile/index.jsx.chunk.4025b.css"
   },
   {
-    "revision": "516e8de76267c69c4721d67349422668",
-    "url": "./route-profile/index.jsx.chunk.a3599.esm.js"
+    "revision": "13b82ed03d648451c57be206f75f0216",
+    "url": "./sw-debug.js"
+  },
+  {
+    "revision": "da23f7f5a9abd707ecc015b2f98a7aef",
+    "url": "./sw-esm.js"
+  },
+  {
+    "revision": "b5b1d18f306645d817de609c193bef4f",
+    "url": "./sw.js"
   }
 ]);
