@@ -8,10 +8,11 @@
     "start": "per-env",
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
+    "start:server": "node server",
     "build": "preact build",
     "serve": "preact build && serve build --single",
     "dev": "preact watch",
-    "format": "prettier-standard '{src,test}/**/*.{js,jsx,ts,tsx}'",
+    "format": "prettier-standard '{src,test,server}/**/*.{js,jsx,ts,tsx}'",
     "test": "jest",
     "deploy:github": "gh-pages -d build"
   },
@@ -29,6 +30,10 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.8.3",
+    "@material-ui/lab": "^4.0.0-alpha.41",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "gh-pages": "^2.2.0",
     "preact": "^10.0.1",
     "preact-render-to-string": "^5.1.0",
