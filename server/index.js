@@ -8,7 +8,7 @@ const { MongoClient } = require('mongodb');
  * Initialization code
  */
 const app = express()
-const port = process.env.NODE_ENV === 'production' ? 80 : 3000
+const port = process.env.PORT || 3000
 //let mongoInstance;
 //const mongoUri = "mongodb+srv://naturepdxwebsite:password@cluster0-wzmm5.mongodb.net/test?retryWrites=true&w=majority";
 //const mongoClient = new MongoClient(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
