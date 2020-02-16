@@ -5,7 +5,7 @@
   "license": "MIT",
   "homepage": ".",
   "scripts": {
-    "start": "npm run build && node server",
+    "start": "node server",
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
     "start:server": "node server",
