@@ -1,5 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
+    "url": "./7760d2e07870d84425bef87bf510fdac.png"
+  },
+  {
+    "url": "./8850348ea77d83acf9c105da38c23d59.png"
+  },
+  {
     "revision": "fa06671ec829f06387f7b53e16a82d79",
     "url": "./assets/carousel/conference01.jpg"
   },
@@ -48,15 +54,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./assets/icons/mstile-150x150.png"
   },
   {
-    "revision": "02971949a01c9aa177e73d38b62a11cc",
-    "url": "./bundle.213be.esm.js"
+    "revision": "20d96f365ea3f922b5169285438f892e",
+    "url": "./bundle.42f8d.esm.js"
   },
   {
-    "revision": "49189671457fcddada78",
-    "url": "./bundle.496ba.css"
+    "revision": "9fd0a59860805baf487c",
+    "url": "./bundle.6ee20.css"
   },
   {
-    "revision": "7b38f75fc4237ff131d33629006cada4",
+    "url": "./f010f3b158a5ee4b63f88c95710e1d78.png"
+  },
+  {
+    "revision": "7067c325cc827151a10850d127437759",
     "url": "./index.html"
   },
   {
@@ -64,12 +73,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./polyfills.5e8e9.esm.js"
   },
   {
-    "revision": "5b63e5827af1c123ef451d280e9a4dc7",
-    "url": "./route-home.chunk.1e124.esm.js"
+    "revision": "779bdf45e9428a55fb06",
+    "url": "./route-home.chunk.183d7.css"
   },
   {
-    "revision": "bd01578654fe673530bd",
-    "url": "./route-home.chunk.88129.css"
+    "revision": "58f779dbb3f0268372f361ff06697e3b",
+    "url": "./route-home.chunk.d0c4e.esm.js"
   },
   {
     "revision": "26a8fa928b5d84b86da6",

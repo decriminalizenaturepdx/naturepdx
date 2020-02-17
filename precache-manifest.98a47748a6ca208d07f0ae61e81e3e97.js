@@ -1,5 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
+    "url": "./7760d2e07870d84425bef87bf510fdac.png"
+  },
+  {
+    "url": "./8850348ea77d83acf9c105da38c23d59.png"
+  },
+  {
     "revision": "fa06671ec829f06387f7b53e16a82d79",
     "url": "./assets/carousel/conference01.jpg"
   },
@@ -48,15 +54,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./assets/icons/mstile-150x150.png"
   },
   {
-    "revision": "49189671457fcddada78",
-    "url": "./bundle.49189.js"
+    "revision": "9fd0a59860805baf487c",
+    "url": "./bundle.6ee20.css"
   },
   {
-    "revision": "49189671457fcddada78",
-    "url": "./bundle.496ba.css"
+    "revision": "9fd0a59860805baf487c",
+    "url": "./bundle.9fd0a.js"
   },
   {
-    "revision": "7b38f75fc4237ff131d33629006cada4",
+    "url": "./f010f3b158a5ee4b63f88c95710e1d78.png"
+  },
+  {
+    "revision": "7067c325cc827151a10850d127437759",
     "url": "./index.html"
   },
   {
@@ -64,12 +73,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./polyfills.7127d.js"
   },
   {
-    "revision": "bd01578654fe673530bd",
-    "url": "./route-home.chunk.88129.css"
+    "revision": "779bdf45e9428a55fb06",
+    "url": "./route-home.chunk.183d7.css"
   },
   {
-    "revision": "bd01578654fe673530bd",
-    "url": "./route-home.chunk.bd015.js"
+    "revision": "779bdf45e9428a55fb06",
+    "url": "./route-home.chunk.779bd.js"
   },
   {
     "revision": "26a8fa928b5d84b86da6",
@@ -84,7 +93,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./sw-debug.js"
   },
   {
-    "revision": "7260375bee448274f4dbf3156a0eca39",
+    "revision": "bd5bbdbd9911654fa04fb39be4d91670",
     "url": "./sw-esm.js"
   },
   {
