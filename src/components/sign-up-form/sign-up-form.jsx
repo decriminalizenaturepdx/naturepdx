@@ -1,32 +1,32 @@
 import { h } from 'preact'
 import { useState } from 'preact/hooks'
-import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
+import { makeStyles } from '@material-ui/core/styles'
+import Button from '@material-ui/core/Button'
+import TextField from '@material-ui/core/TextField'
 import Alert from '@material-ui/lab/Alert'
-import CircularProgress from '@material-ui/core/CircularProgress';
+import CircularProgress from '@material-ui/core/CircularProgress'
 
 const useStyles = makeStyles(theme => ({
   heading: {
-    margin: '32px 0 0 !important',
+    margin: '32px 0 0 !important'
   },
   root: {
     '& > *': {
-      margin: theme.spacing(1),
+      margin: theme.spacing(1)
     },
     '&': {
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'baseline',
+      alignItems: 'baseline'
     },
     '& .Mui-error:after': {
-      borderBottomColor: '#9a1f16',
+      borderBottomColor: '#9a1f16'
     },
     '& .Mui-error': {
-      color: '#9a1f16',
-    },
-  },
-}));
+      color: '#9a1f16'
+    }
+  }
+}))
 
 const emailRegEx = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
 
@@ -68,7 +68,7 @@ const SignUpForm = () => {
     return invalid
   }
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async event => {
     event.preventDefault()
     event.stopPropagation()
     const isInvalid = validateInputs()
@@ -76,23 +76,23 @@ const SignUpForm = () => {
       const body = {
         firstName: firstNameValue.trim(),
         lastName: lastNameValue.trim(),
-        email: emailValue.trim(),
+        email: emailValue.trim()
       }
       try {
         setIsSubmitting(true)
         const resp = await fetch('http://localhost:3000/api/newsletter', {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/json'
           },
-          body: JSON.stringify(body),
+          body: JSON.stringify(body)
         })
         if (resp.status >= 400) {
           throw resp
         }
         setSubmitSuccessful(true)
         setInvalidResponse(false)
-      } catch(err) {
+      } catch (err) {
         setInvalidResponse(true)
       } finally {
         setIsSubmitting(false)
@@ -101,38 +101,51 @@ const SignUpForm = () => {
   }
 
   return (
-    <form className={classes.root} noValidate autoComplete="off" onSubmit={handleSubmit}>
+    <form
+      className={classes.root}
+      noValidate
+      autoComplete='off'
+      onSubmit={handleSubmit}
+    >
       <h3 className={classes.heading}>Sign Up to Our Newsletter</h3>
       <TextField
         error={firstNameInvalid}
         helperText={firstNameInvalid ? 'This is a required field' : ''}
-        label="First name"
+        label='First name'
         onChange={evt => setFirstNameValue(evt.target.value)}
         type='text'
         value={firstNameValue}
-        variant="filled"
+        variant='filled'
       />
       <TextField
         error={lastNameInvalid}
         helperText={lastNameInvalid ? 'This is a required field' : ''}
-        label="Last name"
+        label='Last name'
         onChange={evt => setLastNameValue(evt.target.value)}
         type='text'
         value={lastNameValue}
-        variant="filled"
+        variant='filled'
       />
       <TextField
         error={emailInvalid}
         helperText={emailInvalid ? 'Please type a valid email address' : ''}
-        label="Email"
+        label='Email'
         onChange={evt => setEmailValue(evt.target.value)}
         type='text'
         value={emailValue}
-        variant="filled"
+        variant='filled'
       />
-      {invalidResponse && <Alert severity="error">Something went wrong please try again</Alert>}
-      {submitSuccessful && <Alert severity="success">Thank you for signing up</Alert> }
-      <Button variant="contained" type="submit" disabled={isSubmitting || submitSuccessful}>
+      {invalidResponse && (
+        <Alert severity='error'>Something went wrong please try again</Alert>
+      )}
+      {submitSuccessful && (
+        <Alert severity='success'>Thank you for signing up</Alert>
+      )}
+      <Button
+        variant='contained'
+        type='submit'
+        disabled={isSubmitting || submitSuccessful}
+      >
         Submit
       </Button>
       {isSubmitting && <CircularProgress />}

@@ -9,14 +9,18 @@ app.use(cors())
 
 const emailRegEx = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
 app.post('/api/newsletter', cors(), (req, res) => {
-  const { firstName: encodedFirstName, lastName: encodedLastName, email: encodedEmail } = req.body
+  const {
+    firstName: encodedFirstName,
+    lastName: encodedLastName,
+    email: encodedEmail
+  } = req.body
   if (!encodedFirstName || !encodedLastName || !encodedEmail) {
     return res.sendStatus(400)
   }
   const subscriber = {
     firstName: decodeURIComponent(encodedFirstName),
     lastName: decodeURIComponent(encodedLastName),
-    email: decodeURIComponent(encodedEmail),
+    email: decodeURIComponent(encodedEmail)
   }
   if (!emailRegEx.test(subscriber.email)) {
     return res.sendStatus(400)
