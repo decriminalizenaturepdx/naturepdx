@@ -1,5 +1,5 @@
 const express = require('express')
-const cors = require('cors')
+//const cors = require('cors')
 const path = require('path');
 const bodyParser = require('body-parser')
 const { MongoClient } = require('mongodb');
@@ -17,7 +17,7 @@ const port = process.env.PORT || 3000
  * Middleware
  */
 app.use(bodyParser.json())
-app.use(cors())
+//app.use(cors())
 app.use(express.static('build'))
 /**
  * Request Handlers
