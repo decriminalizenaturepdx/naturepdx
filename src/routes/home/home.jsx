@@ -5,10 +5,12 @@ import MissionStatement from '../../components/mission-statement'
 import MushroomCarousel from '../../components/mushroom-carousel'
 import MediaQuery from 'react-responsive/src/Component'
 import base from '../../style/base.css'
+import LogoSlogan from '../../components/logo-slogan'
 
 const Home = () => {
   const renderContent = () => (
     <>
+      <LogoSlogan />
       <MissionStatement />
       <MushroomCarousel />
       <SignUpForm />
