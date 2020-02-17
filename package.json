@@ -5,7 +5,7 @@
   "license": "MIT",
   "homepage": ".",
   "scripts": {
-    "start": "npm run build && node server",
+    "start": "per-env",
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
     "start:server": "node server",
@@ -19,6 +19,7 @@
   "devDependencies": {
     "enzyme": "^3.10.0",
     "enzyme-adapter-preact-pure": "^2.0.0",
+    "gh-pages": "^2.2.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "jest-preset-preact": "^1.0.0",
@@ -34,12 +35,12 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "gh-pages": "^2.2.0",
-    "mongodb": "^3.5.2",
     "preact": "^10.0.1",
     "preact-render-to-string": "^5.1.0",
     "preact-router": "^3.0.0",
-    "react-responsive-carousel": "^3.1.51"
+    "react-responsive": "^8.0.3",
+    "react-responsive-carousel": "^3.1.51",
+    "typeface-roboto": "^0.0.75"
   },
   "jest": {
     "preset": "jest-preset-preact",

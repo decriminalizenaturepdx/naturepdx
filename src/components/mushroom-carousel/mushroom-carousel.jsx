@@ -1,24 +1,20 @@
 import { h } from 'preact'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { Carousel } from 'react-responsive-carousel'
 
 const MushroomCarousel = () => (
-  <Carousel>
+  <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false}>
     <div>
-      <img src="assets/carousel/mushrooms03.jpg" />
-      <p className="legend">Legend 2</p>
+      <img src='assets/carousel/mushrooms03.jpg' />
     </div>
     <div>
-      <img src="assets/carousel/conference01.jpg" />
-      <p className="legend">Legend 2</p>
+      <img src='assets/carousel/conference01.jpg' />
     </div>
     <div>
-      <img src="assets/carousel/mushrooms02.jpg" />
-      <p className="legend">Legend 3</p>
+      <img src='assets/carousel/mushrooms02.jpg' />
     </div>
     <div>
-      <img src="assets/carousel/conference02.jpg" />
-      <p className="legend">Legend 1</p>
+      <img src='assets/carousel/conference02.jpg' />
     </div>
   </Carousel>
 )

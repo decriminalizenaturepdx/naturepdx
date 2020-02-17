@@ -1,0 +1,16 @@
+.root {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding-right: 8px;
+}
+
+.links {
+    margin-left: 20px;
+    height: 40px;
+}
+
+.links img {
+    height: 40px;
+}
