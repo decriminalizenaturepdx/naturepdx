@@ -8,7 +8,7 @@ app.use(express.static('build'))
  * Request Handlers
  */
 const emailRegEx = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
-app.post('/api/newsletter', cors(), (req, res) => {
+app.post('/api/newsletter', (req, res) => {
   const {
     firstName: encodedFirstName,
     lastName: encodedLastName,
