@@ -1,5 +1,5 @@
-import './style/index.css'
-import './style/overrides.css'
+import 'typeface-roboto'
+import './style/base.css'
 import App from './components/app'
 
 export default App

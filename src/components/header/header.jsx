@@ -1,23 +1,26 @@
 import { h } from 'preact'
-import { Link } from 'preact-router/match'
+import MediaQuery from 'react-responsive/src/Component'
+import SocialLinks from '../social-links'
 import style from './style.css'
-import App from '../app'
 
-const Header = ({ path }) => (
-  <header class={style.header}>
-    <h1>Let'em Grow</h1>
-    <nav>
-      <Link activeClassName={style.active} href={path}>
-        Home
-      </Link>
-      <Link activeClassName={style.active} href={`${path}profile`}>
-        Me
-      </Link>
-      <Link activeClassName={style.active} href={`${path}profile/juan`}>
-        Juan
-      </Link>
-    </nav>
-  </header>
-)
+const Header = () => {
+  const renderContent = () => (
+    <>
+      <h1>Nature PDX</h1>
+      <SocialLinks />
+    </>
+  )
+
+  return (
+    <header class={style.header}>
+      <MediaQuery query='(max-device-width: 768px)'>
+        {renderContent()}
+      </MediaQuery>
+      <MediaQuery query='(min-device-width: 769px)'>
+        <div class={style.wrapper}>{renderContent()}</div>
+      </MediaQuery>
+    </header>
+  )
+}
 
 export default Header
