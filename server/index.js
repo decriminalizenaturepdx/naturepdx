@@ -1,12 +1,12 @@
 const express = require('express')
-const cors = require('cors')
-const bodyParser = require('body-parser')
 const app = express()
-const port = process.env.NODE_ENV === 'production' ? 80 : 3000
+const port = process.env.PORT || 3000
 
-app.use(bodyParser.json())
-app.use(cors())
+app.use(express.static('build'))
 
+/**
+ * Request Handlers
+ */
 const emailRegEx = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
 app.post('/api/newsletter', cors(), (req, res) => {
   const {
@@ -26,8 +26,14 @@ app.post('/api/newsletter', cors(), (req, res) => {
     return res.sendStatus(400)
   }
   console.log('success!', subscriber)
-  // todo add data to DB
   res.sendStatus(200)
 })
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+/**
+ * Server start
+ */
+app.listen(port, () => {
+  console.log(`listening on ${port}`)
+})
+
