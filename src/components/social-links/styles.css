@@ -1,4 +1,4 @@
-.root {
+.SocialLinks {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -6,11 +6,11 @@
     padding-right: 8px;
 }
 
-.links {
+.SocialLinks .SocialLink {
     margin-left: 20px;
     height: 40px;
 }
 
-.links img {
+.SocialLinks img {
     height: 40px;
 }
