@@ -6,46 +6,43 @@
   "homepage": ".",
   "scripts": {
     "start": "node server",
-    "start:production": "npm run -s serve",
-    "start:development": "npm run -s dev",
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "start:server": "node server",
-    "build": "preact build",
-    "serve": "preact build && serve build --single",
-    "dev": "preact watch",
     "format": "prettier-standard '{src,test,server}/**/*.{js,jsx,ts,tsx}'",
-    "test": "jest",
     "deploy:github": "gh-pages -d build"
   },
   "devDependencies": {
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-preact-pure": "^2.0.0",
     "gh-pages": "^2.2.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.9.0",
-    "jest-preset-preact": "^1.0.0",
-    "per-env": "^1.0.2",
-    "preact-cli": "^3.0.0-rc.6",
-    "preact-render-spy": "^1.2.1",
-    "prettier-standard": "^16.1.0",
-    "serve": "^11.1.0"
+    "prettier-standard": "^16.1.0"
   },
   "dependencies": {
     "@material-ui/core": "^4.8.3",
     "@material-ui/lab": "^4.0.0-alpha.41",
     "express": "^4.17.1",
     "node-fetch": "^2.6.0",
-    "preact": "^10.0.1",
-    "preact-render-to-string": "^5.1.0",
-    "preact-router": "^3.0.0",
     "react-responsive": "^8.0.3",
     "react-responsive-carousel": "^3.1.51",
-    "typeface-roboto": "^0.0.75"
+    "typeface-roboto": "^0.0.75",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.4.0"
   },
-  "jest": {
-    "preset": "jest-preset-preact",
-    "setupFiles": [
-      "<rootDir>/tests/__mocks__/browserMocks.js",
-      "<rootDir>/tests/__mocks__/setupTests.js"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   }
 }

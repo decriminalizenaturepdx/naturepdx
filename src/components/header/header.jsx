@@ -1,25 +1,16 @@
-import { h } from 'preact'
-import MediaQuery from 'react-responsive/src/Component'
+import React  from 'react'
 import SocialLinks from '../social-links'
-import style from './style.css'
+import './style.css'
 
 const Header = () => {
-  const renderContent = () => (
-    <>
-      <h1>Nature PDX</h1>
-      <SocialLinks />
-    </>
-  )
 
   return (
-    <header class={style.header}>
-      <MediaQuery query='(max-device-width: 768px)'>
-        {renderContent()}
-      </MediaQuery>
-      <MediaQuery query='(min-device-width: 769px)'>
-        <div class={style.wrapper}>{renderContent()}</div>
-      </MediaQuery>
-    </header>
+    <div className="header">
+        <div className="wrapper">
+          <h1>Let'em Grow</h1>
+          <SocialLinks />
+        </div>
+    </div>
   )
 }
 

@@ -1,10 +1,10 @@
-.root {
+.home-root {
   padding: 56px 20px;
   background: #6c757c;
   color: #f5f5f5;
 }
 
-.wrapper {
+.home-wrapper {
   width: 900px;
   margin: 0 auto;
   padding: 0 20px;

@@ -1,15 +1,13 @@
-import { h } from 'preact'
-import style from './styles.css'
-import Logo from '../../../assets/imgs/logo.jpg'
+import React from 'react'
+import './styles.css'
 
 const LogoSlogan = () => {
   return (
-    <div class={style.root}>
-      <img src={Logo} />
+    <div className="logo-slogan">
+      <img src="https://res.cloudinary.com/dakhemwii/image/upload/v1582421214/logo_k2k2yy.jpg" alt="Logo" />
       <p>
         <h2>
-          - It is an unalienable right to develop your own relationship with
-          Nature
+          - It is an unalienable right to develop your own relationship with Nature
         </h2>
       </p>
     </div>
