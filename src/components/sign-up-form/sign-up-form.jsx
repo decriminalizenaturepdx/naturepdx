@@ -79,7 +79,7 @@ const SignUpForm = () => {
       }
       try {
         setIsSubmitting(true)
-        const resp = await fetch('http://localhost:3000/api/newsletter', {
+        const resp = await fetch('/api/newsletter', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
