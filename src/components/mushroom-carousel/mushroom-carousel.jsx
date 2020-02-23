@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel'
 const MushroomCarousel = () => (
   <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false}>
     <div>
-      <img src="https://res.cloudinary.com/dakhemwii/image/upload/v1582495208/mushrooms03_owtrgs.png" alt="Mushroom foraging" />
+      <img src="https://res.cloudinary.com/dakhemwii/image/upload/v1582496393/mushrooms03_xjygxg.jpg" alt="Mushroom foraging" />
     </div>
     <div>
       <img src="https://res.cloudinary.com/dakhemwii/image/upload/v1582495250/conference01_dgklgf.jpg" alt="Medicinal mushroom conference" />
