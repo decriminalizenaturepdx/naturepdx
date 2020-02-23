@@ -79,7 +79,7 @@ const SignUpForm = () => {
       }
       try {
         setIsSubmitting(true)
-        const url = '/api/newsletter';
+        const url = '/api/newsletter'
         const resp = await fetch(url, {
           method: 'POST',
           headers: {
