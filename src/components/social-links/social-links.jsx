@@ -1,8 +1,5 @@
 import React  from 'react';
 import './styles.css'
-import facebook from '../../assets/imgs/facebook-64.png'
-import instagram from '../../assets/imgs/instagram-64.png'
-import twitter from '../../assets/imgs/twitter-64.png'
 
 const SocialLinks = () => (
   <div className="SocialLinks">
@@ -12,7 +9,7 @@ const SocialLinks = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src={facebook} alt='Facebook page' />
+      <img src="https://res.cloudinary.com/dakhemwii/image/upload/v1582421213/facebook-64_hdx5ub.png" alt='Facebook page' />
     </a>
     <a
       class="SocialLink"
@@ -20,7 +17,7 @@ const SocialLinks = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src={instagram} alt="Instagram feed" />
+      <img src="https://res.cloudinary.com/dakhemwii/image/upload/v1582421213/instagram-64_yuvcfn.png" alt="Instagram feed" />
     </a>
     <a
       class="SocialLink"
@@ -28,7 +25,7 @@ const SocialLinks = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src={twitter} alt="Twitter feed" />
+      <img src="https://res.cloudinary.com/dakhemwii/image/upload/v1582421213/twitter-64_btpqvu.png" alt="Twitter feed" />
     </a>
   </div>
 )
