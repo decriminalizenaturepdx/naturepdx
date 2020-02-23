@@ -79,10 +79,11 @@ const SignUpForm = () => {
       }
       try {
         setIsSubmitting(true)
-        const resp = await fetch('/api/newsletter', {
+        const url = '/api/newsletter'
+        const resp = await fetch(url, {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
           },
           body: JSON.stringify(body)
         })
