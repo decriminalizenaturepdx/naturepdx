@@ -14,7 +14,7 @@ const MushroomCarousel = () => (
       <img src="https://res.cloudinary.com/dakhemwii/image/upload/v1582495220/mushrooms02_fynwh3.jpg" alt="Mushroom foraging" />
     </div>
     <div>
-      <img src="https://res.cloudinary.com/dakhemwii/image/upload/v1582495238/conference02_qr8esd.jpg" alt="Medicinal mushroom conference"/>
+      <img src="https://res.cloudinary.com/dakhemwii/image/upload/v1582495238/conference02_p7s3uy.jpg" alt="Medicinal mushroom conference" />
     </div>
   </Carousel>
 )
